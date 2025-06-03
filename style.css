@@ -26,11 +26,11 @@ header {
   align-items: center;
 }
 .row {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(5, 60px);
   gap: 8px;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.3em;
 }
 .tile {
   border: 2px solid #aaccee;

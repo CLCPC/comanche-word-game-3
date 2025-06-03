@@ -1,0 +1,1 @@
+const DAILY_WORDS = ["ani", "kwa", "kʉh", "tan", "sʉm", "nuh", "har", "tok", "moh", "nap"];

@@ -1,5 +1,5 @@
 
-const WORD_LENGTH = 5;
+const WORD_LENGTH = 3;
 const MAX_GUESSES = 6;
 const validWords = DAILY_WORDS;
 

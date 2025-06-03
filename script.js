@@ -100,13 +100,13 @@ window.addEventListener('DOMContentLoaded', () => {
       shareButton.style.display = "inline-block";
       const guessCount = currentRow + 1;
       shareButton.onclick = () => {
-        const header = `Comanche Word Game 5 - ${guessCount}/${MAX_GUESSES}`;
+        const header = `Comanche Word Game 3 - ${guessCount}/${MAX_GUESSES}`;
         const full = `${header}\n${results.join('\n')}`;
         navigator.clipboard.writeText(full);
         alert("Score copied to clipboard!");
       };
     } else if (currentRow === MAX_GUESSES - 1) {
-      showMessage('The word was: ' + secretArray.join(''));
+      showMessage(`The word was: <span style="color:#145374;">${secretArray.join('')}</span>`);
     }
 
     currentRow++;
@@ -114,7 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function showMessage(msg) {
-    messageContainer.textContent = msg;
+    messageContainer.innerHTML = msg;
     messageContainer.style.fontSize = "1.8em";
     messageContainer.style.fontWeight = "bold";
     messageContainer.style.marginTop = "1em";

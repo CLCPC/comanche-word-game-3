@@ -92,3 +92,4 @@ const WORDS = [
   "ʉrʉ",
   "ʉʔa",
 ];
+const DAILY_WORDS = WORDS;
